@@ -1,0 +1,32 @@
+﻿@model ClinicaMD.Web.Models.ViewModels.ProcedureViewModel
+
+<div class="form-group">
+    <label asp-for="ProcedureTypeId" class="control-label"></label>
+    <select asp-for="ProcedureTypeId" asp-items="Model.ProcedureTypes" class="form-control"></select>
+    <span asp-validation-for="ProcedureTypeId" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="DoctorId" class="control-label"></label>
+    <select asp-for="DoctorId" asp-items="Model.Doctors" class="form-control"></select>
+    <span asp-validation-for="DoctorId" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="PatientId" class="control-label"></label>
+    <select asp-for="PatientId" asp-items="Model.Patients" class="form-control"></select>
+    <span asp-validation-for="PatientId" class="text-danger"></span>
+</div>
+<div class="form-group">
+	<label asp-for="Description" class="control-label"></label>
+	<input asp-for="Description" class="form-control" />
+	<span asp-validation-for="Description" class="text-danger"></span>
+</div>
+<div class="form-group">
+	<label asp-for="Price" class="control-label"></label>
+	<input asp-for="Price" class="form-control" />
+	<span asp-validation-for="Price" class="text-danger"></span>
+</div>
+<div class="form-group">
+	<label asp-for="Remarks" class="control-label"></label>
+	<input asp-for="Remarks" class="form-control" />
+	<span asp-validation-for="Remarks" class="text-danger"></span>
+</div>
