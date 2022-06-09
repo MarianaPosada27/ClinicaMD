@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using ClinicaMD.Web.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClinicaMD.Web.Models
+namespace ClinicaMD.Web.ViewModels
 {
-    public class Patient
+    public class PatientViewModel
     {
         public int Id { get; set; }
 
@@ -35,6 +36,10 @@ namespace ClinicaMD.Web.Models
         [MaxLength(50, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Email { get; set; }
+
+        [Display(Name = "Historia Clinica")]
+        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        public ClinicHistory ClinicHistory { get; set; }
 
         public ICollection<Procedure> Procedures { get; set; }
 

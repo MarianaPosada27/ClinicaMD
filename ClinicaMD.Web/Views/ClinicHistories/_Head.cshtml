@@ -1,4 +1,5 @@
-﻿@model ClinicaMD.Web.Models.ClinicHistory
+﻿@model ClinicaMD.Web.ViewModels.ClinicHistoryViewModel
+
 <div class="column">
                   <div class="form-group">
                       <label for="colFormLabelLg" class="font-weight-bold">Nombre:</label>
@@ -33,7 +34,7 @@
            <partial name = "_ClinicHistory" />
            <div class="form-group">
                 <input type="submit" value="Guardar" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-success">Regresar</a>
+                <a asp-controller="Patients" asp-action="Index" class="btn btn-success">Regresar</a>
             </div>
  <div class="row">
     <div class="col-md-12">

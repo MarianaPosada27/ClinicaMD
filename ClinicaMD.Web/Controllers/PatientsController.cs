@@ -1,5 +1,5 @@
-﻿using ClinicaMD.Web.Data;
-using ClinicaMD.Web.Models;
+﻿   
+using ClinicaMD.Web.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace ClinicaMD.Web.Controllers
 {
+    using ClinicaMD.Web.Models;
+    using ClinicaMD.Web.ViewModels;
     using Microsoft.AspNetCore.Authorization;
+    using System.Collections.Generic;
+    using System.Linq;
 
     [Authorize(Roles = "Admin")]
 

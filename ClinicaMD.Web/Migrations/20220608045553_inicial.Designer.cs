@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicaMD.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220607023912_Inicial")]
-    partial class Inicial
+    [Migration("20220608045553_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -132,8 +132,8 @@ namespace ClinicaMD.Web.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");

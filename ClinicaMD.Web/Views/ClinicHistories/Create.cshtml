@@ -1,4 +1,4 @@
-﻿@model ClinicaMD.Web.Models.ClinicHistory
+﻿@model ClinicaMD.Web.ViewModels.ClinicHistoryViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -12,6 +12,7 @@
     <div class="col-md-12">
             <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Patient.Id"/>
             <partial name = "_Head" />
             
 

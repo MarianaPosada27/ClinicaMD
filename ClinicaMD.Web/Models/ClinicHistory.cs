@@ -20,7 +20,7 @@ namespace ClinicaMD.Web.Models
         public DateTime Date { get; set; }
 
         [Display(Name = "Descripción")]
-        [MaxLength(50, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
+        [MaxLength(1000, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Description { get; set; }
 
